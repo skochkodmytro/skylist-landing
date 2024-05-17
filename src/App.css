@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.container {
+  padding: 0 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.header {
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1.5px solid #070707;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  flex: 1;
+}
+
+.main-title {
+  font-size: 7rem;
+  line-height: 7rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: #070707;
+}
+
+.section {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.section-left {
+  padding-top: 2.5rem;
+  flex: 2;
+}
+
+.section-left-description {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding-right: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #070707;
+  font-family: "Lato", sans-serif;
+}
+
+.section-right {
+  flex: 3;
+}
+
+.section-right-banner {
+  display: block;
+  box-sizing: border-box;
+  max-width: 90%;
+  max-height: 400px;
+  margin-top: 1rem;
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-text {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section-left-buttons {
+  width: 60%;
+}
+
+.section-left-buttons-item {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #070707;
+  color: white;
+  background-color: #070707;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  height: 3.3rem;
+}
+
+.button-outlined {
+  background-color: transparent;
+  color: #070707;
+}
+
+.input {
+  padding: 0 15px;
+  cursor: text;
+}
+
+@media (max-width: 640px) {
+  .section {
+    flex-direction: column-reverse;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .section-left {
+    padding-top: 0.5rem;
+  }
+
+  .section-left-buttons {
+    width: 100%;
+  }
+
+  .section-right-banner {
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer img {
+    display: none;
+  }
+
+  .footer-text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
