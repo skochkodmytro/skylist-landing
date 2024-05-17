@@ -18,6 +18,7 @@ const FOOTER_TEXTS = [
 
 function App() {
   const [email, setEmail] = useState("");
+  console.log("test");
 
   return (
     <div className="page">
