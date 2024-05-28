@@ -51,6 +51,11 @@ function App() {
                 Join waitlist
               </button>
             </div>
+
+            <p className="section-left-buttons-link">
+              Contact us:{" "}
+              <a href="mailto:skyler@shopskylist.com">skyler@shopskylist.com</a>
+            </p>
           </div>
           <div className="section-right">
             <h2 className="main-title">for every occasion</h2>
